@@ -12,7 +12,7 @@ Downloads appear under Releases as tested versions are published. This repositor
 2. Open the file. If Android asks, allow your browser or file manager to install apps from this source.
 3. Confirm installation and launch **The Gods**.
 
-The first release targets 64-bit ARM devices. The application package is `games.thegods.sandbox`. Install a newer release over the existing app to keep its local worlds. Uninstalling the app or clearing its storage can remove saves. Android, Windows, and browser saves do not automatically sync.
+One APK supports ARM64 and x86_64 Android devices. The application package is `games.thegods.sandbox`. Install a newer release over the existing app to keep its local worlds. Uninstalling the app or clearing its storage can remove saves. Android, Windows, and browser saves do not automatically sync.
 
 ## Updates and offline play
 
@@ -20,7 +20,7 @@ On a cold launch, the Android app checks the public stable update manifest when 
 
 An unavailable network or update service does not prevent playing the installed version. Returning to an already running app is not a new cold launch.
 
-Updates use an increasing Android version code, a SHA-256 check of the downloaded APK, and Android's package/signature verification. The app contains no GitHub credentials or private signing key.
+Updates use an increasing Android version code, a SHA-256 check of the downloaded APK, and package/signature verification before Android's installation prompt. The app contains no GitHub credentials or private signing key.
 
 Stable manifest:
 
