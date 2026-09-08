@@ -30,6 +30,8 @@ https://github.com/malov-dot/the-gods-android/releases/latest/download/update.js
 
 Every manifest references a version-specific APK. Release notes describe each build and its verified testing coverage. Download and install only builds published in this repository.
 
-## Initial Android validation
+## Android 1.4.1
 
-Version 1.4.0 passed APK signature/package/architecture and source-snapshot verification, controlled updater tests, JVM validation-rule tests, and Windows-rendered interface/lifecycle checks. Physical Android hardware installation and a real permission/installer/update cycle have **not been verified**: the available emulator crashed. These checks do not establish compatibility or performance on a particular phone. See the release notes for exact evidence.
+Version 1.4.1 fixes a crash shortly after launch when the background music loops. It was installed over 1.4.0 and tested on a Galaxy Z Fold 8 running Android 17 through repeated music loops, world creation, touch selection, simulation playback, and background/resume. App data was not cleared. Music remains enabled.
+
+The new audio regression catches the old release's invalid sample boundary and passes 13 checks with the correction. APK signature, package, architectures, and production sources are verified before publication. The in-app Android permission/installer flow remains unverified because the phone installation used wireless ADB. See release notes for exact evidence and limits.
