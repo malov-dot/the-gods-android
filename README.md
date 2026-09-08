@@ -12,11 +12,11 @@ Downloads appear under Releases as tested versions are published. This repositor
 2. Open the file. If Android asks, allow your browser or file manager to install apps from this source.
 3. Confirm installation and launch **The Gods**.
 
-One APK supports ARM64 and x86_64 Android devices. The application package is `games.thegods.sandbox`. Install a newer release over the existing app to keep its local worlds. Uninstalling the app or clearing its storage can remove saves. Android, Windows, and browser saves do not automatically sync.
+One APK targets Android 7.0 or later with ARM64 and x86_64 support. The application package is `games.thegods.sandbox`. Install a newer release over the existing app to keep its local worlds. Uninstalling the app or clearing its storage can remove saves. Android, Windows, and browser saves do not automatically sync.
 
 ## Updates and offline play
 
-On a cold launch, the Android app checks the public stable update manifest when online. A newer release is offered for download; Android always asks before installing it. Android may also ask you to allow **The Gods** to install updates from this source.
+On a cold launch, the Android app checks the public stable update manifest when online. A newer release downloads automatically; Android always asks before installing it. Android may also ask you to allow **The Gods** to install updates from this source.
 
 An unavailable network or update service does not prevent playing the installed version. Returning to an already running app is not a new cold launch.
 
@@ -29,3 +29,7 @@ https://github.com/malov-dot/the-gods-android/releases/latest/download/update.js
 ```
 
 Every manifest references a version-specific APK. Release notes describe each build and its verified testing coverage. Download and install only builds published in this repository.
+
+## Initial Android validation
+
+Version 1.4.0 passed APK signature/package/architecture and source-snapshot verification, controlled updater tests, JVM validation-rule tests, and Windows-rendered interface/lifecycle checks. Physical Android hardware installation and a real permission/installer/update cycle have **not been verified**: the available emulator crashed. These checks do not establish compatibility or performance on a particular phone. See the release notes for exact evidence.
