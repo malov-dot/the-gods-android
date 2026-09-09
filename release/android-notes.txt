@@ -1,0 +1,9 @@
+The Gods 1.7.1 — Cast & See
+
+Power selection responds immediately during fast-forward. Click or touch the map to cast an area power. While a year is busy, each cast keeps the power, location and radius you chose; a marker confirms it is queued. Observe or Escape cancels pending casts.
+
+Healing, curses and possession still affect a specific person: select the power, then touch a person or community to choose the target. Personal results focus the camera on that person, show an animated named marker and actual stat/condition changes, and keep time paused for inspection.
+
+Impact effects remain visible for real seconds at every speed. Meteor strikes, rain, storms and earthquakes also work over water where appropriate. Fast-forward retains time spent processing a year; high speeds remain limited by the device's simulation capacity.
+
+Single-player sandbox; powers remain free. Install over the existing app to retain saves. Version 1.7.1, Android code 10701. Desktop mouse and host touch fixtures tested; no new physical-phone review.

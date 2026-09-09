@@ -1,0 +1,2 @@
+-keep class games.thegods.updater.TheGodsUpdater { *; }
+-keep class games.thegods.updater.UpdateFileProvider { *; }

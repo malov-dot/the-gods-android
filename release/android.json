@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "package_name": "games.thegods.sandbox",
+  "version_code": 10701,
+  "version_name": "1.7.1",
+  "channel": "stable",
+  "manifest_url": "https://github.com/malov-dot/the-gods-android/releases/latest/download/update.json",
+  "download_page_url": "https://github.com/malov-dot/the-gods-android/releases/latest",
+  "apk_url_prefix": "https://github.com/malov-dot/the-gods-android/releases/download/"
+}

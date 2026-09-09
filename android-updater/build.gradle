@@ -1,0 +1,29 @@
+plugins { id 'com.android.library' version '8.6.1' }
+
+android {
+    namespace 'games.thegods.updater'
+    compileSdk 36
+    buildToolsVersion '36.1.0'
+    defaultConfig {
+        minSdk 24
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+def godotAar = providers.gradleProperty('godotAar').orElse(providers.environmentVariable('GODOT_ANDROID_AAR'))
+if (!godotAar.isPresent()) throw new GradleException('Set -PgodotAar=<Godot 4.7.2 template release AAR> or GODOT_ANDROID_AAR.')
+dependencies {
+    compileOnly files(godotAar.get())
+    implementation 'androidx.core:core:1.16.0'
+    testImplementation 'junit:junit:4.13.2'
+}
+
+tasks.register('copyPlugin', Copy) {
+    dependsOn 'assembleRelease'
+    from(layout.buildDirectory.file('outputs/aar/the-gods-updater-release.aar'))
+    into('../addons/the_gods_updater/bin')
+}
